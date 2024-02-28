@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+app-post {
+  width: 50%;
+  margin: 20px;
+}
+app-post-list {
+  width: 50%;
+  margin: 20px;
+}

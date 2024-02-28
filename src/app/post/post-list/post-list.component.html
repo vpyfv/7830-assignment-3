@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-accordion *ngIf="posts.length > 0">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> post : {{ posts.length }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngFor="let post of posts; let i = index">
+        <p>
+          {{ getCombinedPostContent(i) }}
+        </p>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
